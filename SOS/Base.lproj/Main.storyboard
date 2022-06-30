@@ -32,7 +32,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="6pN-gD-dRn" kind="show" id="IgU-qp-nCc"/>
+                                    <segue destination="6pN-gD-dRn" kind="show" id="I3q-tN-3FQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uif-CJ-7q7">
@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Stories View Controller-->
         <scene sceneID="fDs-T1-w9z">
             <objects>
-                <viewController id="HFc-KZ-b45" sceneMemberID="viewController">
+                <viewController id="HFc-KZ-b45" customClass="StoriesViewController" customModule="SOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tOK-XV-vjZ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +121,48 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="PIq-Ob-9yM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91P-ML-fed">
+                                <rect key="frame" x="127" y="247" width="137" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.90181297059999999" green="0.87521928550000005" blue="0.85655599829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="story #1">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="RAINN:" destination="OEu-uC-2b7" eventType="touchUpInside" id="Cmj-yD-Yop"/>
+                                    <action selector="RAINN:" destination="6pN-gD-dRn" eventType="touchUpInside" id="b3a-3b-rmz"/>
+                                    <action selector="storyOne:" destination="HFc-KZ-b45" eventType="touchUpInside" id="KgF-xq-2UC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4C-1Q-wlK">
+                                <rect key="frame" x="127" y="390" width="137" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.90181297059999999" green="0.87521928550000005" blue="0.85655599829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="story #2">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="NSVRC:" destination="6pN-gD-dRn" eventType="touchUpInside" id="K5R-l6-lXY"/>
+                                    <action selector="storyTwo:" destination="HFc-KZ-b45" eventType="touchUpInside" id="6fM-CZ-VMD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dz-O0-J6y">
+                                <rect key="frame" x="127" y="532" width="137" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.90181297059999999" green="0.87521928550000005" blue="0.85655599829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="story #3">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="storyThree:" destination="HFc-KZ-b45" eventType="touchUpInside" id="X4Q-vH-QZN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9JX-83-jlS"/>
                         <color key="backgroundColor" red="0.33995729679999998" green="0.239127636" blue="0.1355773509" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -128,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gh2-r4-IKw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="880"/>
+            <point key="canvasLocation" x="138.46153846153845" y="879.38388625592415"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oRP-uW-IWg">
@@ -204,10 +246,10 @@
             </objects>
             <point key="canvasLocation" x="2610" y="844"/>
         </scene>
-        <!--View Controller-->
+        <!--Resources View Controller-->
         <scene sceneID="8mB-cT-JD7">
             <objects>
-                <viewController id="6pN-gD-dRn" sceneMemberID="viewController">
+                <viewController id="6pN-gD-dRn" customClass="ResourcesViewController" customModule="SOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kZ9-RT-WfD">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -229,6 +271,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="RAINN:" destination="6pN-gD-dRn" eventType="touchUpInside" id="BkV-Ke-Z4E"/>
                                     <action selector="RAINN:" destination="OEu-uC-2b7" eventType="touchUpInside" id="l0d-Qd-tg0"/>
                                 </connections>
                             </button>
@@ -251,6 +294,9 @@
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="NSVRC:" destination="6pN-gD-dRn" eventType="touchUpInside" id="ecN-hn-rdf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viY-oj-gso">
                                 <rect key="frame" x="149" y="568" width="127" height="69"/>
@@ -285,10 +331,10 @@
             </objects>
             <point key="canvasLocation" x="1914" y="82"/>
         </scene>
-        <!--View Controller-->
+        <!--What To Do View Controller-->
         <scene sceneID="Xtn-l5-mc5">
             <objects>
-                <viewController id="DpU-fW-Fyt" sceneMemberID="viewController">
+                <viewController id="DpU-fW-Fyt" customClass="WhatToDoViewController" customModule="SOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YQr-Tb-SYe">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,7 +370,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="e7p-Ap-r7E"/>
+        <segue reference="PIq-Ob-9yM"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

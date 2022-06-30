@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func RAINN(_ sender: Any) {
+    @IBAction func resources(_ sender: Any) {
         if let url = NSURL(string: "https://www.edutopia.org/article/STEM-resources-downloads") {
             UIApplication.shared.openURL(url as URL)
         }

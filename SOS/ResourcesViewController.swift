@@ -16,10 +16,23 @@ class ResourcesViewController: UIViewController {
     }
     
     @IBAction func RAINN(_ sender: Any) {
-        if let url = NSURL(string: "https://www.edutopia.org/article/STEM-resources-downloads") {
+        if let url = NSURL(string: "https://www.rainn.org/resources") {
             UIApplication.shared.openURL(url as URL)
         }
     }
+    
+    
+    @IBAction func NSVRC(_ sender: Any) {
+        if let url = NSURL(string: "https://www.nsvrc.org/survivors") {
+            UIApplication.shared.openURL(url as URL)
+        }
+    }
+    
+    
+    
+    
+    
+    
     
     /* @IBAction func edutopiaButtonClicked(_ sender: Any) {
         if let url = NSURL(string: "https://www.edutopia.org/article/STEM-resources-downloads") {
@@ -27,4 +40,11 @@ class ResourcesViewController: UIViewController {
         }
     }
 */
+    
+    
+    
+    
+    
+    
+    
 }
